@@ -6,6 +6,7 @@ Welcome to CLVsol-MFmng Documentation!
    :caption: Contents:
 
    this_documentation/index
+   setup/index
 
 Indices and tables
 ==================
