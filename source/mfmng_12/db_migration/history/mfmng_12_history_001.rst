@@ -116,64 +116,6 @@ Criar uma nova instância do banco de dados **mfmng_12** (2020-02-28)
 
 		        /etc/init.d/odoo start
 
-Criar um backup do banco de dados **mfmng_12** (2020-02-28a)
-------------------------------------------------------------
-
-	#. [tkl-odoo12-mmfmng-vm] Estabelecer uma sessão ssh com o servidor **tkl-odoo12-mmfmng-vm** e paralizar o *Odoo*:
-
-	    ::
-
-	        # ***** tkl-odoo12-mmfmng-vm
-	        #
-
-	        ssh tkl-odoo12-mmfmng-vm -l root
-
-	        /etc/init.d/odoo stop
-
-	        su odoo
-
-	#. [tkl-odoo12-mmfmng-vm] Executar os comandos de criação dos arquivos de backup:
-
-	    ::
-
-	        # ***** tkl-odoo12-mmfmng-vm
-	        #
-	        # data_dir = /var/lib/odoo/.local/share/Odoo
-	        #
-
-	        cd /opt/odoo
-	        pg_dump mfmng_12 -Fp -U postgres -h localhost -p 5432 > mfmng_12_2020-02-28a.sql
-
-	        gzip mfmng_12_2020-02-28a.sql
-	        pg_dump mfmng_12 -Fp -U postgres -h localhost -p 5432 > mfmng_12_2020-02-28a.sql
-
-	        cd /var/lib/odoo/.local/share/Odoo/filestore
-	        tar -czvf /opt/odoo/filestore_mfmng_12_2020-02-28a.tar.gz mfmng_12
-
-	#. Retornar a execução do *Odoo* do servidor **tkl-odoo12-mmfmng-vm** ao modo desejado:
-
-	    ::
-
-	        # ***** tkl-odoo12-mmfmng-vm
-	        #
-
-	        cd /opt/odoo
-	        /usr/bin/odoo -c /etc/odoo/odoo-man.conf
-
-	        ^C
-
-	        exit
-
-	        /etc/init.d/odoo start
-
-    Criados os seguintes arquivos:
-        * /opt/odoo/mfmng_12_2020-02-28a.sql
-        * /opt/odoo/mfmng_12_2020-02-28a.sql.gz
-        * /opt/odoo/filestore_mfmng_12_2020-02-28a.tar.gz
-
-.. index:: mfmng_12_2020-02-28a.sql
-.. index:: filestore_mfmng_12_2020-02-28a
-
 Migrar os Usuários de **mfmng_pro** para **mfmng_12** (2020-02-28)
 ------------------------------------------------------------------
 
@@ -284,6 +226,64 @@ Executar o *External Sync Batch* "*Default Batch*" (2020-02-28)
             exit
 
             /etc/init.d/odoo start
+
+Criar um backup do banco de dados **mfmng_12** (2020-02-28a)
+------------------------------------------------------------
+
+	#. [tkl-odoo12-mmfmng-vm] Estabelecer uma sessão ssh com o servidor **tkl-odoo12-mmfmng-vm** e paralizar o *Odoo*:
+
+	    ::
+
+	        # ***** tkl-odoo12-mmfmng-vm
+	        #
+
+	        ssh tkl-odoo12-mmfmng-vm -l root
+
+	        /etc/init.d/odoo stop
+
+	        su odoo
+
+	#. [tkl-odoo12-mmfmng-vm] Executar os comandos de criação dos arquivos de backup:
+
+	    ::
+
+	        # ***** tkl-odoo12-mmfmng-vm
+	        #
+	        # data_dir = /var/lib/odoo/.local/share/Odoo
+	        #
+
+	        cd /opt/odoo
+	        pg_dump mfmng_12 -Fp -U postgres -h localhost -p 5432 > mfmng_12_2020-02-28a.sql
+
+	        gzip mfmng_12_2020-02-28a.sql
+	        pg_dump mfmng_12 -Fp -U postgres -h localhost -p 5432 > mfmng_12_2020-02-28a.sql
+
+	        cd /var/lib/odoo/.local/share/Odoo/filestore
+	        tar -czvf /opt/odoo/filestore_mfmng_12_2020-02-28a.tar.gz mfmng_12
+
+	#. Retornar a execução do *Odoo* do servidor **tkl-odoo12-mmfmng-vm** ao modo desejado:
+
+	    ::
+
+	        # ***** tkl-odoo12-mmfmng-vm
+	        #
+
+	        cd /opt/odoo
+	        /usr/bin/odoo -c /etc/odoo/odoo-man.conf
+
+	        ^C
+
+	        exit
+
+	        /etc/init.d/odoo start
+
+    Criados os seguintes arquivos:
+        * /opt/odoo/mfmng_12_2020-02-28a.sql
+        * /opt/odoo/mfmng_12_2020-02-28a.sql.gz
+        * /opt/odoo/filestore_mfmng_12_2020-02-28a.tar.gz
+
+.. index:: mfmng_12_2020-02-28a.sql
+.. index:: filestore_mfmng_12_2020-02-28a
 
 .. toctree::
    :maxdepth: 2
