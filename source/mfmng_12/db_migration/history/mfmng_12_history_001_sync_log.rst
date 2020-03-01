@@ -12,9 +12,9 @@
 *External Sync Batch Log* [*Default Batch*]
 ===========================================
 
-.. _External Sync Batch - Default Batch - 20200228:
+.. _External Sync Batch - Default Batch - 20200229:
 
-*External Sync Batch* - *Default Batch* (Execution time: 0:21:23.991)
+*External Sync Batch* - *Default Batch* (Execution time: 0:21:12.360)
 ---------------------------------------------------------------------
 
     ::
@@ -53,10 +53,10 @@
         update_count: 0
         task_count: 4
 
-        date_last_sync: 2020-02-29 00:36:42
+        date_last_sync: 2020-02-29 21:08:43
         upmost_last_update: 2018-06-29 14:56:54
 
-        Execution time: 0:00:00.530
+        Execution time: 0:00:00.419
 
         login_msg: [01] Login Ok.
 
@@ -67,10 +67,10 @@
         include_count: 4
         task_count: 4
 
-        date_last_sync: 2020-02-29 00:36:42
+        date_last_sync: 2020-02-29 21:08:44
         upmost_last_update: 2018-06-29 14:56:54
 
-        Execution time: 0:00:00.462
+        Execution time: 0:00:00.440
 
         ########## clv.mfile.marker (clv.global_tag) ##########
         method: _object_external_sync
@@ -104,10 +104,10 @@
         update_count: 0
         task_count: 236
 
-        date_last_sync: 2020-02-29 00:36:43
+        date_last_sync: 2020-02-29 21:08:44
         upmost_last_update: 2017-09-22 22:38:46
 
-        Execution time: 0:00:01.514
+        Execution time: 0:00:01.539
 
         login_msg: [01] Login Ok.
 
@@ -123,13 +123,13 @@
 
         task_count: 236
 
-        date_last_sync: 2020-02-29 00:36:44
+        date_last_sync: 2020-02-29 21:08:46
         upmost_last_update: 2017-09-22 22:38:46
 
         sequence_code: False
         sequence_number_next_actual: False
 
-        Execution time: 0:00:07.205
+        Execution time: 0:00:06.507
 
         ########## clv.mfile.category (clv.mfile.category) ##########
         method: _object_external_sync
@@ -163,10 +163,10 @@
         update_count: 0
         task_count: 45
 
-        date_last_sync: 2020-02-29 00:36:52
+        date_last_sync: 2020-02-29 21:08:52
         upmost_last_update: 2018-06-22 18:42:42
 
-        Execution time: 0:00:00.607
+        Execution time: 0:00:00.556
 
         login_msg: [01] Login Ok.
 
@@ -182,13 +182,13 @@
 
         task_count: 45
 
-        date_last_sync: 2020-02-29 00:36:52
+        date_last_sync: 2020-02-29 21:08:53
         upmost_last_update: 2018-06-22 18:42:42
 
         sequence_code: False
         sequence_number_next_actual: False
 
-        Execution time: 0:00:01.635
+        Execution time: 0:00:01.571
 
         ########## clv.mfile.format (clv.mfile.format) ##########
         method: _object_external_sync
@@ -222,10 +222,10 @@
         update_count: 0
         task_count: 20
 
-        date_last_sync: 2020-02-29 00:36:54
+        date_last_sync: 2020-02-29 21:08:54
         upmost_last_update: 2019-10-07 18:33:52
 
-        Execution time: 0:00:00.454
+        Execution time: 0:00:00.467
 
         login_msg: [01] Login Ok.
 
@@ -241,13 +241,13 @@
 
         task_count: 20
 
-        date_last_sync: 2020-02-29 00:36:54
+        date_last_sync: 2020-02-29 21:08:55
         upmost_last_update: 2019-10-07 18:33:52
 
         sequence_code: False
         sequence_number_next_actual: False
 
-        Execution time: 0:00:01.022
+        Execution time: 0:00:00.812
 
         ########## clv.mfile (clv.mfile) ##########
         method: _object_external_sync
@@ -275,38 +275,38 @@
         reg_count_2: 0
         missing_count: 0
 
-        external_objects: 11153
-        reg_count: 11153
-        include_count: 11153
+        external_objects: 11162
+        reg_count: 11162
+        include_count: 11162
         update_count: 0
-        task_count: 11153
+        task_count: 11162
 
-        date_last_sync: 2020-02-29 00:36:55
-        upmost_last_update: 2020-02-28 14:07:53
+        date_last_sync: 2020-02-29 21:08:56
+        upmost_last_update: 2020-02-29 17:55:34
 
-        Execution time: 0:01:14.136
+        Execution time: 0:01:11.096
 
         login_msg: [01] Login Ok.
 
         Executing: "_object_external_sync"...
 
-        sync_objects: 11153
-        reg_count: 11153
-        include_count: 11153
+        sync_objects: 11162
+        reg_count: 11162
+        include_count: 11162
         update_count: 0
         sync_include_count: 0
         sync_update_count: 0
         sync_count: 0
 
-        task_count: 11153
+        task_count: 11162
 
-        date_last_sync: 2020-02-29 00:38:09
-        upmost_last_update: 2020-02-28 14:07:53
+        date_last_sync: 2020-02-29 21:10:07
+        upmost_last_update: 2020-02-29 17:55:34
 
         sequence_code: False
         sequence_number_next_actual: False
 
-        Execution time: 0:19:56.311
+        Execution time: 0:19:48.854
 
         ############################################################
-        Execution time: 0:21:23.991
+        Execution time: 0:21:12.360
